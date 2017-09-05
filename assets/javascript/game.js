@@ -17,7 +17,7 @@ $(document).ready(function(){
 			player.setAP((player.getAP() + player.getCP()));
 		},
 		pickEnemy: function(){
-		}
+		},
 		pickPlayer: function(){
 		}
 	};
@@ -73,9 +73,15 @@ $(document).ready(function(){
 				this.counterPower = x;
 			}
 		};
-		//push chracter to the character array
+		//Push character to the character array
 		charactersArr.push(character);
-		
+		//Create img object
+		var imgDiv = $("<img>");
+		//Add img src
+		imgDiv.attr("src", "assets/images/0" + i +".jpg");
+		//Append the img to the #characters array
+		$("#charactersArr").append(imgDiv);
+
 	}
 //T E S T   G A M E
 	charactersArr[0].createCharacter("test1",50,10,10);
