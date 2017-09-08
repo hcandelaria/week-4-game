@@ -6,15 +6,42 @@ img{
 	height: 200px;
 	margin: 10px;
 	border: 5px solid gray;
-
+	float: left;
 }
 caption{
+	float: left;
+	width: 10px;
 	position: relative;
-	top: 5%;
+	right: 120px;
+	top: 140px;
+	color: green;
+	font-size: 200%;
+  	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000,
+  				 -1px 1px 0 #000,  1px 1px 0 #000;
+}
+.customeFont{
+	font-family: 'Permanent Marker', cursive;
+    font-size: 500%;
+    color: black;
+}
+h3, h2{
+	font-family: 'Permanent Marker', cursive;
+	color: black;
+	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff,
+  				 -1px 1px 0 #fff,  1px 1px 0 #fff;
 }
 .player{
 	border: 5px solid green;
 }
 .enemy{
 	border: 5px solid red;
+}
+#attBtn{
+	float: left;
+}
+.redText{
+	color: red;
+}
+.blackText{
+	color: red;
 }
